@@ -18,7 +18,7 @@ class sshd {
       'set Port 22',
       ###Security config###
       #disable ROOT login
-      'set PermitRootLogin yes',
+      'set PermitRootLogin no',
       #force Passwords
       'set PermitEmptyPasswords no',
       #force Vercion 2
