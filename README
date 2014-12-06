@@ -8,10 +8,22 @@ The computer security )And the security in general) is a continus process, not a
 
 Its a puppet rules to bootstrap a hardened Linux Server. its a 2 parts. 
 
-The first is a "basical stack" of linux security, SSH server, default secure configs, twaeks to sysctl, Banner set
+The first is a "basical stack" of linux security, SSH server, default secure configs, tweaks to sysctl, Banner set
 
 The second is a "app specified" security. for example "Apache-pHp stack"
 
 the source of "secure config" is the distros recomendations, work "miss-experience" and Lynis security audit
 
-The "first objetive" is make a base config whit 1OO% of "hardened" in Lynis
+The "first objetive" is make a base hardened server
+
+###Secure base components###
+
+SSH, ntp, sysctl
+
+
+###Requerimients###
+
+
+
+###Tested Distros###
+
