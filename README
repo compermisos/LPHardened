@@ -1,0 +1,17 @@
+####Importan note of security####
+
+The config is a "start point" to make a Hardened Linux Server, Not make a SECURE Linux Server
+The computer security )And the security in general) is a continus process, not a "magical trics"
+
+
+###About of###
+
+Its a puppet rules to bootstrap a hardened Linux Server. its a 2 parts. 
+
+The first is a "basical stack" of linux security, SSH server, default secure configs, twaeks to sysctl, Banner set
+
+The second is a "app specified" security. for example "Apache-pHp stack"
+
+the source of "secure config" is the distros recomendations, work "miss-experience" and Lynis security audit
+
+The "first objetive" is make a base config whit 1OO% of "hardened" in Lynis
