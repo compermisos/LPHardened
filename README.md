@@ -1,3 +1,5 @@
+= LPHardened
+
 == What is LPHardener?
 
 Simple, is a "Linux Puppet Hardening Base Code".
@@ -17,11 +19,11 @@ And, if you work as SysAdmin in HigEnd ambient you can easy reuse modules to you
 
 NOT: definitible LPHardener not is a recipe to build a Secure Linux Server, is only scripts to build "more hardened" Base Installs. 
 
-Thes Computer security )And Security in General) is a continuos proces, based in a polifacetic work.
+Thes Computer security (And Security in General) is a continuos proces, based in a polifacetic work.
 
 LPHardener only ofer a "Bootstrap" code to define YOUR Linux Server Infraestructure.
 
-=== What rules are taken in consideration to build LPHardener?===
+=== What rules are taken in consideration to build LPHardener?
 
 The SANS Linux Security CheckList are a basical start point to build a "secure server" and somo recomendations are taken.
 
@@ -32,10 +34,13 @@ You can easy clone the Git repo, Fork, or chekout, Make the changes necesaries t
 
 Run in puppet "in your way" and Enjoy.
 
-Intentionall no exist "detailed" instrucctions to build this project. p.s. You can view de Rake!!!!
+Intentionall no exist "detailed" instrucctions to build this project. (p.s. You can view de Rake!!!!)
 
 === Install Requisites
 
-LPHardener Requieres Puppet 2.7+
-Linux is mandatory requisite
-And access to package sources to your Distribution are encourage.
+*LPHardener Requieres Puppet 2.7+
+*Linux is mandatory requisite
+*And access to package sources to your Distribution are encourage.
+
+== Tanks To
+
