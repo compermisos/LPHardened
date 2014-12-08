@@ -1,6 +1,5 @@
-= LPHardened
-
-== What is LPHardener?
+What is LPHardener?
+====
 
 Simple, is a "Linux Puppet Hardening Base Code".
 
@@ -15,7 +14,8 @@ this code, and star build a secure Linux Server
 
 And, if you work as SysAdmin in HigEnd ambient you can easy reuse modules to you ambient.
 
-== LPHardener is Secure?
+LPHardener is Secure?
+====
 
 NOT: definitible LPHardener not is a recipe to build a Secure Linux Server, is only scripts to build "more hardened" Base Installs. 
 
@@ -23,12 +23,14 @@ Thes Computer security (And Security in General) is a continuos proces, based in
 
 LPHardener only ofer a "Bootstrap" code to define YOUR Linux Server Infraestructure.
 
-=== What rules are taken in consideration to build LPHardener?
+What rules are taken in consideration to build LPHardener?
+====
 
 The SANS Linux Security CheckList are a basical start point to build a "secure server" and somo recomendations are taken.
 
 
-== Install Instructions
+Install Instructions
+====
 
 You can easy clone the Git repo, Fork, or chekout, Make the changes necesaries to adapt to your infraestructure.
 
@@ -36,11 +38,20 @@ Run in puppet "in your way" and Enjoy.
 
 Intentionall no exist "detailed" instrucctions to build this project. (p.s. You can view de Rake!!!!)
 
-=== Install Requisites
+Install Requisites
+----
 
-*LPHardener Requieres Puppet 2.7+
-*Linux is mandatory requisite
-*And access to package sources to your Distribution are encourage.
+- LPHardener Requieres Puppet 2.7+
+- Linux is mandatory requisite
+- And access to package sources to your Distribution are encourage.
 
-== Tanks To
+What is the current Version
+====
+
+The current Version is 0.0.5 Code Name Slow Motion and are review work
+
+And de Devel Vercion (AKA Git Hub master branch) is 1.0.0 Code Name Anaheli
+
+Tanks To
+====
 
