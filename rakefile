@@ -5,3 +5,9 @@ sh "ln -s #{here}/hooks/check_syntax.sh #{here}/.git/hooks/pre-commit"
 puts "Puppet syntax check hook added"
 end
 
+desc "Run Puppet config in the current machine"
+task :run_puppet do
+here = File.dirname(__FILE__)
+puppet apply --modulepath=#{here}/modules/ #{here}/manifest/site.pp 
+puts "Puppet default manifest aplied"
+end
