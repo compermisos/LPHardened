@@ -39,7 +39,10 @@ Intentionall no exist "detailed" instrucctions to build this project. (p.s. You 
 Install Requisites
 ----
 
-- LPHardener Requieres Puppet 2.7+
+LPHardener Requieres
+
+- Puppet 3.0+
+- puppetlabs/firewall
 - Linux is mandatory requisite
 - And access to package sources to your Distribution are encourage.
 
