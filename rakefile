@@ -8,6 +8,14 @@ end
 desc "Run Puppet config in the current machine"
 task :run_puppet do
 here = File.dirname(__FILE__)
-sh "puppet apply --modulepath=#{here}/modules/ #{here}/manifest/site.pp"
+sh "puppet apply --modulepath=/etc/puppet/environments/test/modules:/etc/puppet/modules:/usr/share/puppet/modules:#{here}/modules/ #{here}/manifest/site.pp"
 puts "Puppet default manifest aplied"
 end
+
+desc "install puppet and modules"
+task :setup do
+here = File.dirname(__FILE__)
+sh "puppet module install puppetlabs-firewall"
+puts "installing modules"
+end
+

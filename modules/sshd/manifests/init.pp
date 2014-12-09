@@ -42,4 +42,11 @@ class sshd {
 #    require => [Package['openssh-server'],File['/etc/ssh/sshd_config']],
     require => [Package['openssh-server'],Augeas['sshd_config']],
   }
+  firewall { '100 allow openssh':
+    chain   => 'INPUT',
+    state   => ['NEW'],
+    dport   => '22',
+    proto   => 'tcp',
+    action  => 'accept',
+  } 
 }
