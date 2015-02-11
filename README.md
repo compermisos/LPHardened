@@ -42,7 +42,7 @@ Install Requisites
 LPHardener Requieres
 
 - Puppet 3.0+
-- puppetlabs/firewall
+- puppetlabs/firewall )puppet module install puppetlabs/firewall) 
 - Linux is mandatory requisite
 - And access to package sources to your Distribution are encourage.
 
