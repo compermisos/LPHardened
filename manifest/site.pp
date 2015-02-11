@@ -11,6 +11,7 @@
   class { ['fw::pre', 'fw::post']: }
 
 node 'Default' {
+  include fw
   include sshd
   include banner
   include chkrootkit

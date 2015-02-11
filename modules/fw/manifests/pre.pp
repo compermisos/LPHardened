@@ -55,5 +55,12 @@ class fw::pre {
     proto    => 'tcp',
     action   => 'accept',
   }  
+  firewall { '200 allow outgoing https':
+    chain    => 'OUTPUT',
+    state    => ['NEW'],
+    dport    => '443',
+    proto    => 'tcp',
+    action   => 'accept',
+  }  
 
 }
