@@ -11,6 +11,7 @@
   class { ['fw::pre', 'fw::post']: }
 
 node 'Default' {
+  $ssh_port = 22
   include fw
   include sshd
   include banner

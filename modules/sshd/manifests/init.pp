@@ -22,7 +22,9 @@ class sshd {
       #force Passwords
       'set PermitEmptyPasswords no',
       #force Vercion 2
-      'set Protocol 2',
+      'set Protocol 2',      
+      #set Port
+      "set Port $ssh_port",
       #user jail
       'set UsePrivilegeSeparation yes',
       #permit pubkey auth
@@ -38,7 +40,7 @@ class sshd {
       #Secure SSH Server based in https://stribika.github.io/2015/01/04/secure-secure-shell.html
       'set KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256',
       'set Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr',
-      'set MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-ripemd160-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,hmac-ripemd160,umac-128@openssh.com',
+      #'set MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-ripemd160-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,hmac-ripemd160,umac-128@openssh.com',
       
     ],
     require => Package['openssh-server'],
@@ -58,7 +60,7 @@ class sshd {
   firewall { '100 allow openssh':
     chain   => 'INPUT',
     state   => ['NEW'],
-    dport   => '22',
+    dport   => "$ssh_port",
     proto   => 'tcp',
     action  => 'accept',
   } 
