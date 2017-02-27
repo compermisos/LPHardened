@@ -17,6 +17,7 @@ node 'Default' {
   include banner
   include chkrootkit
   include rkhunter
+  include '::mysql::server'
 }
 
 
