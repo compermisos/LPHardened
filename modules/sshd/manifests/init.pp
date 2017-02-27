@@ -15,7 +15,7 @@ class sshd {
     context => '/files/etc/ssh/sshd_config',
     changes => [
       #Port config
-      'set Port 22',
+      'set Port $ssh_port',
       ###Security config###
       #disable ROOT login
       'set PermitRootLogin no',
